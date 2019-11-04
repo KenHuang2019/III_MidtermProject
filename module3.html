@@ -126,7 +126,322 @@
         </div>
     </div>
 
+<!-- M3 -->
+<div class="bgimg_3">
+        <div class="caption" style="top:30%;">
+            <span class="border">Module 3 : Object</span>
+        </div>
+    </div>
+    <div class="paragraph">
+        <!-- M3-1 -->
+        <div class="code_paragraph">
+            <p id="3-1"><b>3-1. String :</b></p>
+            <div class="py_code">
+                <b>Python</b> code:
+                <pre><code class="language-python">string = "Hello world" # assign a string to a variable
+print(string)
+print(len(string)) # length of string
+print(string[0]) # get the character at position 1 (index 0)
+print(string[1:5]) # get the characters at position 2~5 (index 1~4)
+print(string.index('o'))# get the index of the character
+print(string.find('o'))# get the index of the character
+print(string.replace("H", "h"))
+print(string.lower())
+print(string.upper())
+print(string.split(' '))
 
+string = "  whitespace at the beginning and end   "
+print(string.strip()) # remove whitespace at the beginning or end
+
+string = """assign
+multiline
+string
+to
+a
+variable""" # assign multiline string to a variable
+print(string)</code></pre>
+            </div>
+            <div class="js_code">
+                <b>Javascript</b> code:
+                <pre><code class="language-javascript">var string = "Hello world";
+document.write(string);
+document.write(string.length);
+document.write(string[0]);
+document.write(string.substring(1,5));
+document.write(string.indexOf('o'));
+
+document.write(string.replace('H', 'h'));
+document.write(string.toLowerCase());
+document.write(string.toUpperCase());
+document.write(string.split(' '));
+
+string = "  whitespace at the beginning and end   "
+document.write(string.trim());
+
+string = `assign
+multiline
+string
+to
+a
+variable`;
+document.write(string);</code></pre>
+            </div>
+        </div>
+        <hr>
+        <!-- M3-2 -->
+        <div class="code_paragraph">
+            <p id="3-2"><b>3-2. Math :</b></p>
+            <div class="py_code">
+                <b>Python</b> code:
+                <pre><code class="language-python">import math
+import random
+print(math.ceil(5.8))
+print(math.ceil(-5.8))
+print(math.floor(5.8))
+print(math.floor(-5.8))
+print(math.pow(2, 4))
+print(round(6.4))
+print(round(6.9))
+print(math.sqrt(9))
+print(random.random())
+print(random.randrange(1,100))</code></pre>
+            </div>
+            <div class="js_code">
+                <b>Javascript</b> code:
+                <pre><code class="language-javascript">
+                    
+document.write(Math.ceil(5.8), '<br>'); // 6
+document.write(Math.ceil(-5.8), '<br>'); // -5
+document.write(Math.floor(5.8), '<br>'); // 5
+document.write(Math.floor(-5.8), '<br>'); // -6
+document.write(Math.pow(2,4), '<br>'); // 16
+document.write(Math.round(6.4), '<br>'); // 6
+document.write(Math.round(6.9), '<br>'); // 7
+document.write(Math.sqrt(9), '<br>'); // 3
+document.write(Math.random(), '<br>'); 
+document.write(Math.floor(Math.random() * 101), '<br>');</code></pre>
+            </div>
+        </div>
+        <hr>
+        <!-- M3-3 -->
+        <div class="code_paragraph">
+            <p id="3-3"><b>3-3. Collections :</b></p>
+            <div class="py_code">
+                <b>Python</b> code:
+                <pre><code class="language-python">"""
+There are four collection data types in Python :
+List       : ordered and changeable.            Allows duplicate members.
+Tuple      : ordered and unchangeable.          Allows duplicate members.
+Set        : unordered and unindexed.           No duplicate members.
+Dictionary : unordered, changeable and indexed. No duplicate members.
+the index of values start from [0]
+There are some difference between each other,
+we will mention it later in Module 3. Object
+"""
+# List
+py_list_1 = ['a', 'b', 'c']
+py_list_2 = ['e', 'f', 'g']
+print(py_list_1)
+print(len(py_list_1)) # .length
+print(','.join(py_list_1)) # toString()
+
+py_list_3 = py_list_1 + py_list_2 # concat()
+print(py_list_3)
+print(py_list_3.pop())
+print(py_list_3)
+py_list_3.append('h') # push()
+print(py_list_3)
+py_list_3.remove('c') # remove a item
+print(py_list_3.index('h')) # indexOf()
+
+print(py_list_3[2])
+py_list_3[2]='d'
+print(py_list_3[2])
+for i in py_list_3:
+    print(i)
+
+# copy
+py_list_4 = py_list_3 # reference to py_list_3
+py_list_3[0] = 'i' # change py_list_3
+print(py_list_3)
+print(py_list_4) # changes automatically made in py_list_4
+
+py_list_5 = py_list_3.copy() # copy a py_list_3
+py_list_3[0] = 'j' # change py_list_3
+print(py_list_3)
+print(py_list_5) # changes doesn't apply to py_list_5
+
+# Tuple
+py_tuple = ('a', 'b', 'c')
+print(py_tuple)
+print(len(py_tuple))
+print(py_tuple[0])
+for i in py_tuple:
+    print(i)
+del py_tuple # delete the tuple
+
+# tuple is unchangeable, so you cannot remove items from it
+py_tuple[3] = 'd' # error example, this line will cause error
+print(py_tuple)
+
+
+# Set
+py_set = {'a', 'b', 'c'}
+print(py_set)
+print(len(py_set))
+for i in py_set:
+    print(i)
+py_set.add('d') # like append but unordered
+print(py_set)
+py_set.update(["e", "f", "g"]) # add multiple items
+print(py_set)
+py_set.remove('a')
+# py_set.remove('a') # this line will cause error, because the 'a' does not exist
+print(py_set)
+py_set.discard('b') # if the item to remove does not exist
+py_set.discard('b') # discard() will NOT raise an error
+print(py_set) 
+py_set.clear() # empty the set, but not delete
+print(py_set) 
+del py_set # delete the set
+
+# set is unindexed
+print(py_set[0]) # error example, this line will cause error
+
+# Dictionary
+person = {
+    'name' : 'Julia Chen',
+    'birth' : '1995/05/20',
+    'mobile' : '0975976521'
+    }
+print(person)
+print(len(person))
+for i in person:
+    print(i) # get keys
+print(person['name']) # get a value
+person["birth"] = '1985/10/05' # change value
+print(person.get('birth')) # get a value
+for i in person.values():
+    print(i) # get values
+for i in person.items():
+    print(i) # get keys and values
+person['age'] = 20 # add a key and value
+del person['mobile'] # remove a key and value
+print(person)
+person.clear() # empty the dictionay
+print(person)
+del person # delete the dictionay</code></pre>
+            </div>
+            <div class="js_code">
+                <b>Javascript</b> code:
+                <pre><code class="language-javascript">// array 
+var alphabet_1 = ['a', 'b', 'c'];
+var alphabet_2 = ['e', 'f', 'g'];
+document.write(alphabet_1, '<br>');
+document.write(alphabet_1.length, '<br>');
+document.write(alphabet_1.toString(), '<br>');
+
+var alphabet_3 = alphabet_1.concat(alphabet_2);
+document.write(alphabet_3, '<br>');
+document.write(alphabet_3.pop(), '<br>');
+document.write(alphabet_3, '<br>');
+alphabet_3.push('h');
+document.write(alphabet_3, '<br>');
+document.write(alphabet_3.indexOf('h'), '<br>');
+
+document.write(alphabet_3[2], '<br>');
+alphabet_3[2] = 'd';
+document.write(alphabet_3[2], '<br>');
+for (i in names) {
+    document.write(alphabet_3[i], '<br>');
+}
+
+// object
+// method 1
+var person = {};
+person.name = 'Ken Huang';
+person.birth = '1990/01/06';
+person.mobile = '0975143545';
+document.write(person, ',', person.name, ',', person.birth, ',', person.mobile, '<br>');
+// method 2
+var obj = { name: 'Julia Chen', birth: '1995/05/20', mobile: '0975976521' };
+$.each(obj,
+    function (key, val) {
+        $('body').append(key+':' + val+'<br>');
+    }
+);
+var str = '';
+for (i in obj) {
+    str = str + obj[i] + '<br>';
+}
+document.write(str, '<br>');
+
+// method 3
+function person_2(name, birth, mobile) {
+    this.name = name;
+    this.birth = birth;
+    this.mobile = mobile;
+}
+var p = new person_2('Tony Lin', '1998/11/30', '0975348932');
+document.write(p.name, ',', p.birth, ',', p.mobile);
+
+// the property could be a function
+var person_3 = {
+            name: 'Ken Huang',
+            birth: '1990/01/06',
+            mobile: () => { console.log("Ken's mobile number: 0975143545"); }
+        };
+person_3.mobile(); // Ken's mobile number: 0975143545
+</code></pre>
+            </div>
+            <p class="code_sup_right">
+                There are some tutorial about OOP (Object-oriented Programming) :
+            </p>
+            <iframe class="code_sup_right" height="470" src="https://www.youtube.com/embed/pTB0EiLXUC8" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+            <iframe class="code_sup_right" height="470" src="https://www.youtube.com/embed/W6NZfCO5SIk" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+        </div>
+        <hr>
+        <!-- M3-4 -->
+        <div class="code_paragraph">
+            <p id="3-4"><b>3-4. Date :</b></p>
+            <div class="py_code">
+                <b>Python</b> code:
+                <pre><code class="language-python">import datetime
+print(datetime.datetime.now())
+print(datetime.datetime.now().year)
+print(datetime.datetime.now().month)
+print(datetime.datetime.now().day)
+print(datetime.datetime.now().weekday()) # Monday is 0
+print(datetime.datetime.now().isoweekday()) # Monday is 1
+print(datetime.datetime.now().hour)
+print(datetime.datetime.now().minute)
+print(datetime.datetime.now().second)
+print(int(datetime.datetime.now().timestamp()*1000))
+# datetime.timestamp() returns epoch seconds</code></pre>
+            </div>
+            <div class="js_code">
+                <b>Javascript</b> code:
+                <pre><code class="language-javascript">
+document.write(new Date());
+document.write(new Date().getFullYear());
+document.write(new Date().getMonth());
+document.write(new Date().getDate());
+
+document.write(new Date().getDay()); // Monday is 1
+document.write(new Date().getHours());
+document.write(new Date().getMinutes());
+document.write(new Date().getSeconds());
+document.write(new Date().getTime());
+
+</code></pre>
+            </div>
+        </div>
+        <hr>
+    </div>
     
 
     <!-- Feedback page link -->
