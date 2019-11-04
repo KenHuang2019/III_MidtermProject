@@ -1,0 +1,53 @@
+/* document background-color */
+
+html, body {
+    background-color: black;
+    height: 100%;
+}
+
+.bgimg_h, .bgimg_last, .bgimg_1, .bgimg_2, .bgimg_3, .bgimg_4, .bgimg_5 {
+    position: relative;
+    opacity: 0.8;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* high */
+
+.bgimg_h {
+    background-image: url("../images/bg_h.jpg");
+    min-height: 5100px;
+}
+
+.bgimg_last {
+    background-image: url("../images/bg_last.jpg");
+    background-size: 120%;
+    min-height: 50%;
+}
+
+.bgimg_1 {
+    background-image: url("../images/bg_1.png");
+    min-height: 100%;
+}
+
+.bgimg_2 {
+    background-image: url("../images/bg_2.jpg");
+    min-height: 150px;
+}
+
+.bgimg_3 {
+    background-image: url("../images/bg_3.jpg");
+    min-height: 150px;
+}
+
+.bgimg_4 {
+    background-image: url("../images/bg_4.jpg");
+    min-height: 150px;
+}
+
+.bgimg_5 {
+    background-image: url("../images/bg_5.jpg");
+    min-height: 150px;
+}

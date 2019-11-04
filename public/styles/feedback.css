@@ -1,0 +1,69 @@
+.feedbackDiv {
+    height: 50%;
+}
+
+.feedbackDiv .caption {
+    top: 10%;
+}
+
+.feedbackSubDiv {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.feedbackDiv .feedbackSubDiv form {
+    width: 70%;
+    display: inline-block;
+}
+
+
+.feedbackDiv .feedbackSubDiv label {
+    float: left;
+    color: aliceblue;
+    font-size: 120%;
+}
+
+.feedbackDiv .feedbackSubDiv input, textarea {
+    width: 100%;
+    opacity: 0.8;
+    border: 1px solid rgb(250, 0, 0);
+}
+
+.feedbackDiv .feedbackSubDiv textarea {
+    height:200px;
+}
+
+.feedbackDiv .feedbackSubDiv button {
+    margin: 30px;
+    padding: 5px 20px;
+    color: white;
+    background-image: linear-gradient(rgb(110, 0, 0), rgb(0, 0, 0));
+    border: 0.5px solid red;
+}
+
+.feedbackRes {
+    font-size: 120%;
+    color: white;
+    text-align: center;
+}
+
+/* feedbackLink */
+
+.feedbackLinkDiv {
+    height: 20%;
+}
+
+.feedbackLinkDiv .caption {
+    top: 30%;
+}
+
+.feedbackLinkDiv .caption a {
+    display: block;
+    padding: 10px 0px;
+    position: relative;
+    color: #fff;
+    font-size: 36px;
+    letter-spacing: 10px;
+    opacity: 1;
+    text-decoration: none;
+}

@@ -1,0 +1,43 @@
+.caption {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.videoLink{
+    display: inline;
+    position: relative;
+    text-align: center;
+    color: #777;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+
+.caption span.border {
+    position: relative;
+    color: #fff;
+    font-size: 36px;
+    letter-spacing: 10px;
+    opacity: 1;
+}
+
+.paragraph {
+    color: #777;
+    background-color: white;
+    text-align: center;
+    padding: 30px 80px;
+    text-align: justify;
+    opacity: 0.9;
+}
+
+::selection {
+    background-color: rgb(255, 0, 0, 0.5);
+    color: white;
+}
+a:hover {
+    background-color: rgb(255, 0, 0, 0.7);
+    color: white;
+}

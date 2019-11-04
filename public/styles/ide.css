@@ -1,0 +1,49 @@
+.paragraph .ideImg {
+    text-align: center;
+}
+
+.paragraph .ideImg a {
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+}
+
+.paragraph .ideImg img {
+    width: 30%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.paragraph .ideImg img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+
+.paragraph .ideImg:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.paragraph .ideContainer {
+    display: block;
+    text-align: center;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+
+.paragraph .ideContainer img {
+    cursor: pointer;
+    display: inline-block;
+    width: 90%;
+}
+
+/* Expanding image text */
+
+#ideImgtext {
+    font-size: 20px;
+}

@@ -1,0 +1,9 @@
+.floatRight {
+    float: right;
+    cursor: pointer;
+}
+
+.floatLeft {
+    float: left;
+    cursor: pointer;
+}

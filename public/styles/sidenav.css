@@ -1,0 +1,130 @@
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.3s ease;
+    /* 0.6 second transition effect to slide in the sidenav */
+}
+
+.sidenav_bg {
+    background-color: #111;
+    /* Black*/
+    opacity: 0.9;
+    height: 100%;
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    border-right: 1px solid rgba(255, 255, 255, 0.329);
+    background-image: url("../images/sidenav--.jpg")
+}
+
+/* The navigation menu links */
+
+.sidenav .sidenav_bg a {
+    padding: 8px 8px 8px 32px;
+    /* top right buttom left */
+    text-decoration: none;
+    font-size: 24px;
+    color: #ff0000;
+    display: block;
+    transition: 0.3s ease;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav .sidenav_bg a:hover {
+    color: #f1f1f1;
+    background-color: rgba(134, 23, 23, 0.8);
+    transition: 0.3s ease;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+
+.sidenav .sidenav_bg a:hover .subnav-content {
+    display: inline;
+}
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .sidenav_bg .closebtn {
+    position: absolute;
+    top: 0;
+    right: 550px;
+    padding-right: 36px;
+    display: inline;
+}
+
+.dropright {
+    position: relative;
+    display: block;
+}
+
+.dropright-content {
+    display: none;
+    position: absolute;
+    width: 430px;
+    left: 250px;
+    padding-left: 25px;
+    top: 0;
+    opacity: 0.9;
+}
+
+.dropright:hover .dropright-content {
+    display: block;
+    border-right: 1.5px solid red;
+    background-color: #111;
+}
+
+/* menu buttons */
+.menu {
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    padding: 10px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.3s ease;
+    text-align: center;
+    user-select: none;
+}
+.menu_bg {
+    transition: 0.1s ease;
+    left: 0px;
+    background-image: url("../images/sidenav.jpg");
+    background-size: cover;
+    border-right: 1.5px solid red;
+    box-shadow: -25px 10px 30px 20px rgb(255, 0, 0);
+    opacity: 1;
+}
+/* On hover, add a black background color with a little bit see-through */
+
+.menu:hover {
+    background-color: rgba(134, 23, 23, 0.8);
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
