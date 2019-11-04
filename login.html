@@ -99,9 +99,6 @@
                 <label for="password">Password :</label>
                 <input type="password" class="loginPassword" id="loginPassword" name="loginPassword"
                     placeholder="Enter Password"><br><br>
-                <% if(locals.flashMsg) { %>
-                <small id="loginHelp" class="form-text text-muted <%= locals.infoType %>"><b><%= flashMsg %></b></small>
-                <% } %>
             </div>
             <div class="loginSubDiv loginCenter">
                 <button type="submit" class="loginBtn" disabled>Submit</button>

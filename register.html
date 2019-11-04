@@ -98,11 +98,6 @@
                 <label for="password">Password :</label>
                 <input type="password" class="loginPassword" id="registerPassword" name="registerPassword"
                     placeholder="Enter Password"><br><br>
-                <%# response message %>
-                <% if(locals.message) { %>
-                <small id="emailHelp"
-                    class="form-text text-muted <%= message.type %>"><b><%= message.text %></b></small>
-                <% } %>
             </div>
             <div class="loginSubDiv loginCenter">
                 <button type="submit" class="loginBtn" disabled>Submit</button>
