@@ -86,6 +86,58 @@
         </div>
     </div>
 
+    <!-- IDE -->
+    <div id="online_IDE" class="bgimg_4">
+        <div class="caption" style="top:30%;">
+            <span class="border">Online Python IDE</span>
+        </div>
+    </div>
+    <div class="paragraph">
+        <p style="text-align:center;"><b>If you haven't installed Python yet, you could use online IDE to edit and run
+                the code.</b></p>
+        <p style="text-align:center;">There are some Python IDE websites:</p>
+        <%# ide web_img slider %>
+        <div class="ideImg">
+            <a href="https://repl.it/languages/python3" onmouseover="ideAnchorHover(this);" target="_blank"
+                rel="noopener noreferrer">
+                <img src="images/ide_web/repl.it.png" name="repl.it">
+            </a>
+            <a href="https://paiza.io/en/projects/new?language=python3" onmouseover="ideAnchorHover(this);"
+                target="_blank" rel="noopener noreferrer">
+                <img src="images/ide_web/paiza.png" name="paiza.io">
+            </a>
+            <a href="https://www.jdoodle.com/python3-programming-online" onmouseover="ideAnchorHover(this);"
+                target="_blank" rel="noopener noreferrer">
+                <img src="images/ide_web/jdoodle.png" name="www.jdoodle.com">
+            </a>
+        </div>
+        <!-- The expanding image container -->
+        <div class="ideContainer">
+            <!-- Image text -->
+            <br>
+            <!-- Get this object, use .children[index] to change text and src -->
+            <a id="ideImgLink" href="https://repl.it/languages/python3" target="_blank" rel="noopener noreferrer">
+                <span>https://repl.it/languages/python3</span> <!--  .children[0].innerText -->
+                <br><!--  .children[1] -->
+                <br><!--  .children[2] -->
+                <!-- Expanded image -->
+                <img src="images/ide_web/repl.it.png"><!--  .children[3].src -->
+            </a>
+        </div>
+    </div>
+
+    <!-- Feedback page link -->
+    <div class="bgimg_5 feedbackLinkDiv">
+        <div class="caption">
+            <a href="/feedback#feedback">Ask question</a>
+        </div>
+    </div>
+
+
+
+
+
+
     <a id="menu_bg" class="menu menu_bg"></a>
     <a onclick="openNav()" class="menu">&#10095;</a>
 
@@ -113,6 +165,21 @@
         }
         // link particles .js and .json files ( .json is a display parameter setting file)
         particlesJS.load('particles-js', 'public/lib/particles.json');
+
+        // online IDE website link
+        function ideAnchorHover(inputAnchor) {
+            // Get the image link by id
+            var imgLink = document.getElementById("ideImgLink");
+            imgLink.href = inputAnchor.href;
+            // Use the value of the alt attribute of the clickable image as text
+            imgLink.children[0].innerText = inputAnchor.href;
+            // Use the value of the alt attribute of the clickable image as hyperlink to the website
+            imgLink.children[3].src = inputAnchor.children[0].src;
+        }
+        // hide preview of IDE
+        if ($('.border')[2].innerText.indexOf('Module') == 0) {
+            $('#ideImgLink').hide($('#ideImgLink').children[3]);
+        }
     </script>
 
     <div id="secretInfo" style="display: none;"></div><!-- put text in this div and copy to clipboard -->
