@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Python V.S. Javascript</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="public/styles/fonts.css">
+    <link rel="stylesheet" href="public/styles/bgimg.css">
+    <link rel="stylesheet" href="public/styles/scrollbar.css">
+    <link rel="stylesheet" href="public/styles/sidenav.css">
+    <link rel="stylesheet" href="public/styles/memberSystem.css">
+    <link rel="stylesheet" href="public/styles/ide.css">
+    <link rel="stylesheet" href="public/styles/prism.css"> <!-- source code highlighter -->
+    <link rel="stylesheet" href="public/styles/source_code.css">
+    <link rel="stylesheet" href="public/styles/icon.css">
+    <link rel="stylesheet" href="public/styles/content.css">
+    <link rel="stylesheet" href="public/styles/feedback.css">
+    <link rel="stylesheet" href="public/styles/questions.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><!-- jquery.js -->
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- fancybox -->
+    <link rel="stylesheet" href="public/styles/fancybox.css">
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><!-- particles.js -->
+    <script src="https://kit.fontawesome.com/2b4fe78200.js"></script> <!-- Font Awesome toolkit -->
+    <script src="public/lib/prism.js"></script> <!-- source code highlighter  -->
+    <script src="public/lib/prism-line-numbers.js"></script> <!-- source code highlighter plug-in -->
+</head>
+
+<body class="line-numbers">
+
+    <div id="mySidenav" class="sidenav">
+        <div id="mySidenav_bg" class="sidenav_bg">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/III_MidtermProject/">Home</a>
+            <a href="/III_MidtermProject/intro#intro">Introduction</a>
+            <a href="/III_MidtermProject/ide#online_IDE">Online Python IDE</a>
+            <div class="dropright">
+                <a href="/III_MidtermProject/module1#online_IDE" class="dropright_btn">Module 1<br>Basic Syntax</a>
+                <div class="dropright-content">
+                    <a href="/III_MidtermProject/module1#1-1">1-1. Show the execute result</a>
+                    <a href="/III_MidtermProject/module1#1-2">1-2. Comments</a>
+                    <a href="/III_MidtermProject/module1#1-3">1-3. Variable and Data-type</a>
+                </div>
+            </div>
+            <div class="dropright">
+                <a href="/III_MidtermProject/module2#online_IDE" class="dropright_btn">Module 2<br>Operators
+                    and<br>Control flow</a>
+                <div class="dropright-content">
+                    <a href="/III_MidtermProject/module2#2-1-1">2-1-1. Arithmetic Operators</a>
+                    <a href="/III_MidtermProject/module2#2-1-2">2-1-2. Assignment Operators</a>
+                    <a href="/III_MidtermProject/module2#2-1-3">2-1-3. Comparison Operators</a>
+                    <a href="/III_MidtermProject/module2#2-1-4">2-1-4. Logical Operators</a>
+                    <a href="/III_MidtermProject/module2#2-1-5">2-1-5. typeof Operators</a>
+                    <a href="/III_MidtermProject/module2#2-2">2-2.&nbsp;&nbsp;&nbsp; Conditional statements</a>
+                    <!-- &nbsp; is whitespace  -->
+                    <a href="/III_MidtermProject/module2#2-3-1">2-3-1. While Loops</a>
+                    <a href="/III_MidtermProject/module2#2-3-2">2-3-2. For Loops</a>
+                    <a href="/III_MidtermProject/module2#2-4">2-4.&nbsp;&nbsp;&nbsp; Function</a>
+                </div>
+            </div>
+            <div class="dropright">
+                <a href="/III_MidtermProject/module3#online_IDE" class="dropright_btn">Module 3<br>Object</a>
+                <div class="dropright-content">
+                    <a href="/III_MidtermProject/module3#3-1">3-1. String</a>
+                    <a href="/III_MidtermProject/module3#3-2">3-2. Math</a>
+                    <a href="/III_MidtermProject/module3#3-3">3-3. Collections</a>
+                    <a href="/III_MidtermProject/module3#3-4">3-4. Date</a>
+                </div>
+            </div>
+            <a href="/III_MidtermProject/feedback#feedback">Ask question</a>
+            <a href="/III_MidtermProject/questions#questions">Q&A</a>
+        </div>
+    </div>
+
+    <!-- particles  -->
+    <div id="particles-js" class="bgimg_1">
+        <div class="caption">
+            <span class="border" style="font-family: 'BankGothicMediumBT'; font-size: 350%; ">Python V.S.
+                Javascript</span>
+        </div>
+    </div>
+
+    <div class="loginDiv">
+        <form method="post">
+            <div class="loginSubDiv loginCenter">
+                <b>Log in</b>
+            </div>
+            <div class="loginSubDiv">
+                <label for="account">Account(Email) :</label>
+                <input type="email" class="loginAccount" id="loginAccount" name="loginAccount"
+                    placeholder="Enter Account(Email)" autocomplete="off">
+
+            </div>
+            <div class="loginSubDiv">
+                <label for="password">Password :</label>
+                <input type="password" class="loginPassword" id="loginPassword" name="loginPassword"
+                    placeholder="Enter Password"><br><br>
+                <% if(locals.flashMsg) { %>
+                <small id="loginHelp" class="form-text text-muted <%= locals.infoType %>"><b><%= flashMsg %></b></small>
+                <% } %>
+            </div>
+            <div class="loginSubDiv loginCenter">
+                <button type="submit" class="loginBtn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <a id="menu_bg" class="menu menu_bg"></a>
+    <a onclick="openNav()" class="menu">&#10095;</a>
+
+    <div class="login">
+        <a href="/III_MidtermProject/login">Log in</a>
+    </div>
+    <div class="register">
+        <a href="/III_MidtermProject/register">Register</a>
+    </div>
+
+    <script>
+        // get class name == 'dropright-content' input title text
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "800px";
+            document.getElementById("mySidenav_bg").style.width = "250px";
+            $('#menu_bg').css('left', '250px');
+        }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav_bg").style.width = "0";
+            $('#menu_bg').css('left', '0px');
+        }
+        // link particles .js and .json files ( .json is a display parameter setting file)
+        particlesJS.load('particles-js', 'public/lib/particles.json');
+    </script>
+
+    <div id="secretInfo" style="display: none;"></div><!-- put text in this div and copy to clipboard -->
+</body>
+
+</html>
