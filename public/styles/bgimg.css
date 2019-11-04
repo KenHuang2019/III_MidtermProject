@@ -28,7 +28,7 @@ html, body {
 }
 
 .bgimg_1 {
-    background-image: url("public/images/bg_1.png");
+    background-image: url("../images/bg_1.png");
     min-height: 100%;
 }
 

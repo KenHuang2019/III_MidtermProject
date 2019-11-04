@@ -27,7 +27,7 @@
     width: 0;
     /* 0 width - change this with JavaScript */
     border-right: 1px solid rgba(255, 255, 255, 0.329);
-    background-image: url("public/images/sidenav--.jpg")
+    background-image: url("../images/sidenav--.jpg")
 }
 
 /* The navigation menu links */
@@ -106,7 +106,7 @@
 .menu_bg {
     transition: 0.1s ease;
     left: 0px;
-    background-image: url("public/images/sidenav.jpg");
+    background-image: url("../images/sidenav.jpg");
     background-size: cover;
     border-right: 1.5px solid red;
     box-shadow: -25px 10px 30px 20px rgb(255, 0, 0);
