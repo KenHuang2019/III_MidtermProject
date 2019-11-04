@@ -1,1 +1,1 @@
-# This is an educational website for learning Python and Javascript
+## This is an educational website for learning Python and Javascript.
