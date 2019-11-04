@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Python V.S. Javascript</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="public/styles/fonts.css">
+    <link rel="stylesheet" href="public/styles/bgimg.css">
+    <link rel="stylesheet" href="public/styles/scrollbar.css">
+    <link rel="stylesheet" href="public/styles/sidenav.css">
+    <link rel="stylesheet" href="public/styles/memberSystem.css">
+    <link rel="stylesheet" href="public/styles/ide.css">
+    <link rel="stylesheet" href="public/styles/prism.css"> <!-- source code highlighter -->
+    <link rel="stylesheet" href="public/styles/source_code.css">
+    <link rel="stylesheet" href="public/styles/icon.css">
+    <link rel="stylesheet" href="public/styles/content.css">
+    <link rel="stylesheet" href="public/styles/feedback.css">
+    <link rel="stylesheet" href="public/styles/questions.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><!-- jquery.js -->
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- fancybox -->
+    <link rel="stylesheet" href="public/styles/fancybox.css">
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><!-- particles.js -->
+    <script src="https://kit.fontawesome.com/2b4fe78200.js"></script> <!-- Font Awesome toolkit -->
+    <script src="public/lib/prism.js"></script> <!-- source code highlighter  -->
+    <script src="public/lib/prism-line-numbers.js"></script> <!-- source code highlighter plug-in -->
+</head>
+
+<body class="line-numbers">
+
+    <div id="mySidenav" class="sidenav">
+        <div id="mySidenav_bg" class="sidenav_bg">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/III_MidtermProject/">Home</a>
+            <a href="/III_MidtermProject/intro#intro">Introduction</a>
+            <a href="/III_MidtermProject/ide#online_IDE">Online Python IDE</a>
+            <div class="dropright">
+                <a href="/III_MidtermProject/module1#online_IDE" class="dropright_btn">Module 1<br>Basic Syntax</a>
+                <div class="dropright-content">
+                    <a href="/III_MidtermProject/module1#1-1">1-1. Show the execute result</a>
+                    <a href="/III_MidtermProject/module1#1-2">1-2. Comments</a>
+                    <a href="/III_MidtermProject/module1#1-3">1-3. Variable and Data-type</a>
+                </div>
+            </div>
+            <div class="dropright">
+                <a href="/III_MidtermProject/module2#online_IDE" class="dropright_btn">Module 2<br>Operators
+                    and<br>Control flow</a>
+                <div class="dropright-content">
+                    <a href="/III_MidtermProject/module2#2-1-1">2-1-1. Arithmetic Operators</a>
+                    <a href="/III_MidtermProject/module2#2-1-2">2-1-2. Assignment Operators</a>
+                    <a href="/III_MidtermProject/module2#2-1-3">2-1-3. Comparison Operators</a>
+                    <a href="/III_MidtermProject/module2#2-1-4">2-1-4. Logical Operators</a>
+                    <a href="/III_MidtermProject/module2#2-1-5">2-1-5. typeof Operators</a>
+                    <a href="/III_MidtermProject/module2#2-2">2-2.&nbsp;&nbsp;&nbsp; Conditional statements</a>
+                    <!-- &nbsp; is whitespace  -->
+                    <a href="/III_MidtermProject/module2#2-3-1">2-3-1. While Loops</a>
+                    <a href="/III_MidtermProject/module2#2-3-2">2-3-2. For Loops</a>
+                    <a href="/III_MidtermProject/module2#2-4">2-4.&nbsp;&nbsp;&nbsp; Function</a>
+                </div>
+            </div>
+            <div class="dropright">
+                <a href="/III_MidtermProject/module3#online_IDE" class="dropright_btn">Module 3<br>Object</a>
+                <div class="dropright-content">
+                    <a href="/III_MidtermProject/module3#3-1">3-1. String</a>
+                    <a href="/III_MidtermProject/module3#3-2">3-2. Math</a>
+                    <a href="/III_MidtermProject/module3#3-3">3-3. Collections</a>
+                    <a href="/III_MidtermProject/module3#3-4">3-4. Date</a>
+                </div>
+            </div>
+            <a href="/III_MidtermProject/feedback#feedback">Ask question</a>
+            <a href="/III_MidtermProject/questions#questions">Q&A</a>
+        </div>
+    </div>
+
+    <!-- particles  -->
+    <div id="particles-js" class="bgimg_1">
+        <div class="caption">
+            <span class="border" style="font-family: 'BankGothicMediumBT'; font-size: 350%; ">Python V.S.
+                Javascript</span>
+        </div>
+    </div>
+
+    <!-- 0. -->
+    <div class="paragraph" id="intro">
+        <h3 style="text-align:center;">
+            The Software industry has always been the front-runner in adopting change and innovation.<br>
+            Programming languages keep upgrading and new languages pops every then and now to cover up the new needs of
+            the technology world. </h3>
+    </div>
+    <div class="bgimg_2">
+        <div class="caption" style="top:40%;">
+            <span class="border">What’s the Difference between Javascript and Python?</span>
+        </div>
+    </div>
+    <div class="paragraph" style="text-align:center;">
+        <h3 style="text-align:center;">We will compare both the language based on following factors</h3>
+        <a class="videoLink floatLeft" data-fancybox data-type="iframe"
+            data-src="https://www.youtube.com/embed/Y8Tko2YC5hA" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+            href="javascript:;" class="various">
+            <!-- replace this img -->
+            <img height="150px" src="public/images/Python.png"><br>
+            What is Python?
+        </a>
+        <div style="display:inline-block;text-align:left;">
+            <ol style="display:inline-block; align: ">
+                <li>Ease Of use, Beginner friendly
+                <li>Versatility
+                <li>Performance
+                <li>Scalability
+                <li>Growth opportunity for developers
+                <li>Tech trends
+            </ol>
+        </div>
+        <a class="videoLink floatRight" data-fancybox data-type="iframe"
+            data-src="https://www.youtube.com/embed/upDLs1sn7g4" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+            href="javascript:;" class="various">
+            <!-- replace this img -->
+            <img height="150px" src="public/images/Javascript.png"><br>
+            What is Javascript?
+        </a>
+    </div>
+    <!-- 1. -->
+    <div class="bgimg_3">
+        <div class="caption" style="top:30%;">
+            <span class="border">1. Easy to Start & Use : For Beginners</span>
+        </div>
+    </div>
+    <div class="paragraph">
+        <p>One of the key deciding factor, especially for the absolute beginner who are looking to make software
+            development
+            as the career option is how quickly S/he can learn any new language and how easy it is to do.<br><br>
+            Python is tailor made to suit the needs for newbies, it is very beginner friendly and designed to be quickly
+            learned and adopted. So as far as ease of use and design complexity is concerned Python fares better than
+            Javascript.<br><br>Python supports a programming style that uses simple functions and variables without
+            engaging in
+            class definitions. However, for JavaScript, that’s all there is.<br><br>
+            <b>JavaScript is most complex modern programming language comparatively to python.</b> </p>
+    </div>
+    <!-- 2. -->
+    <div class="bgimg_4">
+        <div class="caption" style="top:30%;">
+            <span class="border">2. Versatility</span>
+        </div>
+    </div>
+    <div class="paragraph">
+        <p>Python is one of the most versatile programming language suited for</p>
+        <ul>
+            <li>Web development
+            <li>ERP (Enterprise Resource Planning) development
+            <li>AI/ ML/ Data Analytics Development
+        </ul>
+        <p>Javascript is also quite handy when it comes to Web development, ERP development, but considering the future
+            market trends of AI/ML Javascript is not well suited. It is quite new in this arena and still has a long way
+            to go.<br>Python has already made its name as one of the most preferred language for Data statistics &
+            numerical handling, AI/ML algorithm handling .<br><br>
+
+            One thing which actually fares well for Javascript is its ability to be used both as a front-end language
+            and as a backend language. It’s very well suited for full-stack development need of programmers. Also, when
+            it comes to Mobile app development Javascript score well over Python, as python is majorly a backend
+            language which runs mostly on the server side.
+
+            So here both languages are neck to neck in terms of its utility and versatility. Python has a strong
+            community being the oldest player always gets the preference from lots of newcomers. But for me both are
+            great it just boils down to the need of the developer which will influence the choice .</p>
+    </div>
+    <!-- 3. -->
+    <div class="bgimg_5">
+        <div class="caption" style="top:30%;">
+            <span class="border">3. Performance</span>
+        </div>
+    </div>
+    <div class="paragraph">
+        <p>Well, this comparison is not very easy as there are multiple factors involved, but the fair way to analyze
+            would be to compare NodeJs and Python, keeping backend in perspective.
+
+            In case of speed Node is significantly faster. This great performance is largely due to Node.js being based
+            on Chrome’s V8, which is a very fast and powerful engine. This performance of NodeJS allows it to be apt for
+            building realtime applications.<br><br>
+
+            NodeJS even though is single threaded it has an event-based architecture and non-blocking I/O that helps it
+            to maximize the usage of CPU and computer memory. These event-driven architecture is based on asynchronous
+            calls that allow the Node.js servers to process more concurrent requests as compared to the multi-threaded
+            servers. As it’s non-blocking I/O do not block program execution under I/O-heavy workloads, it helps improve
+            the Node.js application runtime performance. These factors, in turn, make Node.js servers faster and
+            productive and also provide the fastest server-side solutions.</p>
+    </div>
+    <!-- 4. -->
+    <div class="bgimg_2">
+        <div class="caption" style="top:30%;">
+            <span class="border">4. Scalability</span>
+        </div>
+    </div>
+    <div class="paragraph">
+        <p>When it comes to scalability we need to understand how effective the language is in handling large user
+            traffic and also how these are handled using minimum server utilization. Server side resource optimization
+            and large user base handling decides how much your product is scalable.
+
+            It also depends upon the coder’s skill if he writes an optimized code that can be scaled, it helps the
+            project to be flexible and scalable else no matter what language or server side language you use you may end
+            up messing.
+
+            Python, does not support asynchronous programming by default as compared to NodeJs, but it supports
+            coroutines with which asynchronous processing can be easily achieved. So, even if its architecture may seem
+            not as scalable as that of Nodejs, Python has the tools with which necessary scalability can be reached.
+            NodeJs though look like designed for speed and scalability, but I would leave it to the developer to decide
+            as again it is contextual and need dependent.
+
+            Python can also scale very well. See YouTube and Instagram are two great products using Python.</p>
+        <p>Python also scales in two directions that Node doesn’t :</p>
+        <ul>
+            <li>code complexity: Python is well suited to developing large size projects , python gives you an ease to
+                code complex projects where NodeJs may sometimes will pose difficulty due to its asynchronous
+                programming.
+            <li>Wider domain: Python is great at putting a web-app together and everything else
+        </ul>
+        <p>So it all boils down to the need and the given goal a product/project is trying to achieve which should be a
+            deciding factor.</p>
+    </div>
+    <!-- 5. -->
+    <div class="bgimg_3">
+        <div class="caption" style="top:40%;">
+            <span class="border">5. Career Growth Opportunity</span>
+        </div>
+    </div>
+    <div class="paragraph">
+        <p>Recently Javascript being a full-stack language is being hyped a lot and also people with MEAN stack
+            knowledge are paid well. Javascript is becoming popular among big shot tech giants and is being used either
+            as front-end or backend language. Having said that Python is equally rewarding as it is very well suited for
+            Artificial Intelligence , Machine Learning stuff, Data analytics. If you are eyeing a great career
+            considering both current and future Python is a great choice.<br><br>
+
+            I feel both are winners in their own way, if you want to be a full-stack developer and like to develop
+            scalable mobile & web solutions javascript will be an advantage. But if you want to be a data scientist/data
+            engineer Python will be a go 2 language. Both of these are well paying and growth oriented language so make
+            your choices suiting to your hunger and most importantly keeping your vision as a programmer.</p>
+    </div>
+
+    <div class="bgimg_h">
+        <div class="caption" style="top:0.5%">
+            <span class="border">Comparison Between Python and Javascript</span><br><br>
+            <img src="public/images/python-vs-javascript.jpg" style="position: relative;"><br><br>
+            <a style="color: white; font-size: 24px; margin: 24px;" href="https://www.educba.com/python-vs-javascript/">
+                Reference:https://www.educba.com/python-vs-javascript/</a>
+        </div>
+    </div>
+
+    <!-- Feedback page link -->
+    <div class="bgimg_5 feedbackLinkDiv">
+        <div class="caption">
+            <a href="/III_MidtermProject/feedback#feedback">Ask question</a>
+        </div>
+    </div>
+
+
+
+
+
+    <a id="menu_bg" class="menu menu_bg"></a>
+    <a onclick="openNav()" class="menu">&#10095;</a>
+
+    <div class="login">
+        <a href="/III_MidtermProject/login">Log in</a>
+    </div>
+    <div class="register">
+        <a href="/III_MidtermProject/register">Register</a>
+    </div>
+
+    <script>
+        // get class name == 'dropright-content' input title text
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "800px";
+            document.getElementById("mySidenav_bg").style.width = "250px";
+            $('#menu_bg').css('left', '250px');
+        }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav_bg").style.width = "0";
+            $('#menu_bg').css('left', '0px');
+        }
+        // link particles .js and .json files ( .json is a display parameter setting file)
+        particlesJS.load('particles-js', 'public/lib/particles.json');
+    </script>
+
+    <div id="secretInfo" style="display: none;"></div><!-- put text in this div and copy to clipboard -->
+</body>
+
+</html>
